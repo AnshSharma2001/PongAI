@@ -61,14 +61,14 @@ NEAT stands for "NeuroEvolution of Augmenting Topologies". It is an algorithm us
 
 5. **Compatibility Distance**: To determine which species a particular genome belongs to, the genome's compatibility distance to existing species' representatives is calculated using:
 
-\[ d = \frac{c_1E}{N} + \frac{c_2D}{N} + c_3 \cdot W \]
+$$ d = \frac{c_1E}{N} + \frac{c_2D}{N} + c_3 \cdot W $$
 
 Where:
-    - \( E \) is the number of excess genes.
-    - \( D \) is the number of disjoint genes.
-    - \( W \) is the average weight differences of matching genes.
-    - \( N \) is the number of genes in the larger genome (to normalize for genome size).
-    - \( c_1, c_2, \) and \( c_3 \) are configurable coefficients.
+- $E$ is the number of excess genes.
+- $D$ is the number of disjoint genes.
+- $W$ is the average weight differences of matching genes.
+- $N$ is the number of genes in the larger genome (to normalize for genome size).
+- $c_1, c_2,$ and $c_3$ are configurable coefficients.
 
 #### Key Features of NEAT
 

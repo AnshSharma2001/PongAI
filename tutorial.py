@@ -115,7 +115,7 @@ def run_neat(config):
     p.add_reporter(stats)
     p.add_reporter(neat.Checkpointer(1))
 
-    winner = p.run(eval_genomes, 1)
+    winner = p.run(eval_genomes, 50) # ideally changing generations to 100 would create a pro ai
     with open("best.pickle", "wb") as f:
         pickle.dump(winner, f)
 
